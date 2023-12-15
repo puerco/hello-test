@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Set env
         run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
-      - uses: puerco/generate-vex@2a94e34c7e9ea8ebd466b3b053ee98ec8bb90c3f
+      - uses: puerco/generate-vex@4c396045d7a7be0c1f935bcb44c4217d4eac50d9
         with:
             product: pkg:generic/hello@${{ env.RELEASE_VERSION }}
 
